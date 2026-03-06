@@ -2,6 +2,7 @@ import { useState } from "react"
 import { motion, useScroll, useMotionValueEvent } from "framer-motion"
 import { Menu, X } from 'lucide-react'
 import { cn } from "@/lib/utils"
+import { Logo } from "@/components/Logo"
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -37,11 +38,7 @@ export function Navbar() {
       >
         {/* Logo */}
         <a href="/" className="flex items-center gap-2 relative z-50">
-          <img
-            src="https://cdn.poehali.dev/projects/c12c0a38-283d-456a-8c8b-a20ed4ebcc9f/bucket/06a7f2de-fa3f-427a-9ac0-03898357dbcf.png"
-            alt="ЭкоКомфорт"
-            className="h-10 w-auto object-contain"
-          />
+          <Logo size={40} />
         </a>
 
         {/* Desktop Menu */}
