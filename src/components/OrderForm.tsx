@@ -47,7 +47,7 @@ export function OrderForm() {
   }
 
   return (
-    <section id="order" className="py-20 relative">
+    <section id="order-form" className="py-20 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-green-900/5 to-transparent pointer-events-none" />
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-2xl mx-auto">
