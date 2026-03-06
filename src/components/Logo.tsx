@@ -53,8 +53,8 @@ export function Logo({ className = "", size = 40 }: { className?: string; size?:
       <line x1="27" y1="21" x2="30" y2="25" stroke="#4ade80" strokeWidth="0.9" strokeLinecap="round" />
 
       {/* Company name */}
-      <text x="65" y="14" fontFamily="Arial, sans-serif" fontSize="9" fontWeight="700" fill="#ffffff" textAnchor="middle">ЭКО</text>
-      <text x="65" y="24" fontFamily="Arial, sans-serif" fontSize="7.5" fontWeight="400" fill="#4ade80" textAnchor="middle">КОМФОРТ</text>
+      <text x="65" y="10" fontFamily="Arial, sans-serif" fontSize="10" fontWeight="900" fill="#ffffff" textAnchor="middle">ЭКО</text>
+      <text x="65" y="22" fontFamily="Arial, sans-serif" fontSize="8.5" fontWeight="800" fill="#4ade80" textAnchor="middle" letterSpacing="1">КОМФОРТ</text>
       </g>
     </svg>
   )
