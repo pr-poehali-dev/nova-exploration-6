@@ -38,7 +38,7 @@ export function Navbar() {
       >
         {/* Logo */}
         <a href="/" className="flex items-center gap-2 relative z-50">
-          <Logo size={40} />
+          <Logo size={52} />
         </a>
 
         {/* Desktop Menu */}
