@@ -38,7 +38,7 @@ export function Navbar() {
         {/* Logo */}
         <a href="/" className="flex items-center gap-2 relative z-50">
           <img
-            src="https://cdn.poehali.dev/files/a82cb591-0a60-4878-ad66-37bf785b89e7.png"
+            src="https://cdn.poehali.dev/projects/c12c0a38-283d-456a-8c8b-a20ed4ebcc9f/bucket/06a7f2de-fa3f-427a-9ac0-03898357dbcf.png"
             alt="ЭкоКомфорт"
             className="h-10 w-auto object-contain"
           />

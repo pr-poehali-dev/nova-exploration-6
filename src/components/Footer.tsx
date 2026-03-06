@@ -8,7 +8,7 @@ export function Footer() {
           <div>
             <a href="/" className="flex items-center gap-2 mb-6">
               <img
-                src="https://cdn.poehali.dev/files/a82cb591-0a60-4878-ad66-37bf785b89e7.png"
+                src="https://cdn.poehali.dev/projects/c12c0a38-283d-456a-8c8b-a20ed4ebcc9f/bucket/06a7f2de-fa3f-427a-9ac0-03898357dbcf.png"
                 alt="ЭкоКомфорт"
                 className="h-12 w-auto object-contain"
               />
@@ -42,16 +42,16 @@ export function Footer() {
             <h4 className="font-semibold mb-6">Связаться с нами</h4>
             <p className="text-white/60 mb-2">Красноярск и область</p>
             <a
-              href="tel:+73912000000"
+              href="tel:+79233150897"
               className="text-xl font-medium hover:text-green-400 transition-colors block mb-4"
             >
-              +7 (391) 200-00-00
+              +7 923 315 08-97
             </a>
             <a
-              href="mailto:info@ekokomfort24.ru"
+              href="mailto:infoekokomfort@bk.ru"
               className="text-white/60 hover:text-green-400 transition-colors"
             >
-              info@ekokomfort24.ru
+              infoekokomfort@bk.ru
             </a>
           </div>
         </div>

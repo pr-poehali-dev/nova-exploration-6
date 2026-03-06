@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero"
 import { Services } from "@/components/Services"
 import { Work } from "@/components/Work"
 import { Footer } from "@/components/Footer"
+import { OrderForm } from "@/components/OrderForm"
 import { motion } from "framer-motion"
 import { GlassCard } from "@/components/ui/glass-card"
 import Icon from "@/components/ui/icon"
@@ -160,6 +161,8 @@ const Index = () => {
         </div>
       </section>
 
+      <OrderForm />
+
       {/* Call to Action Section */}
       <section id="contact" className="py-32 relative">
         <div className="container mx-auto px-6 text-center relative z-10">
@@ -192,10 +195,10 @@ const Index = () => {
               Заказать обработку
             </button>
             <a
-              href="tel:+73912000000"
+              href="tel:+79233150897"
               className="px-10 py-5 glass rounded-full font-bold text-xl text-white hover:bg-white/10 transition-all hover:scale-105"
             >
-              +7 (391) 200-00-00
+              +7 923 315 08-97
             </a>
           </motion.div>
         </div>
