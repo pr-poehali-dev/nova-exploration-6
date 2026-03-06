@@ -37,8 +37,8 @@ export function Navbar() {
         )}
       >
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2 relative z-50">
-          <Logo size={52} />
+        <a href="/" className="flex items-center relative z-50">
+          <Logo size={52} className="block" />
         </a>
 
         {/* Desktop Menu */}

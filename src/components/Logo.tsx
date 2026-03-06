@@ -7,10 +7,12 @@ export function Logo({ className = "", size = 40 }: { className?: string; size?:
       width={w}
       height={h}
       viewBox="0 0 88 40"
+      style={{ verticalAlign: "middle" }}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
+      <g transform="translate(0, 7)">
       {/* Hexagon emblem */}
       <polygon
         points="20,1 35,1 42,13 35,25 20,25 13,13"
@@ -53,6 +55,7 @@ export function Logo({ className = "", size = 40 }: { className?: string; size?:
       {/* Company name */}
       <text x="65" y="14" fontFamily="Arial, sans-serif" fontSize="9" fontWeight="700" fill="#ffffff" textAnchor="middle">ЭКО</text>
       <text x="65" y="24" fontFamily="Arial, sans-serif" fontSize="7.5" fontWeight="400" fill="#4ade80" textAnchor="middle">КОМФОРТ</text>
+      </g>
     </svg>
   )
 }
