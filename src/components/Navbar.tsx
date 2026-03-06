@@ -13,9 +13,9 @@ export function Navbar() {
   })
 
   const navLinks = [
-    { name: "Проекты", href: "#work" },
     { name: "Услуги", href: "#services" },
-    { name: "О нас", href: "#about" },
+    { name: "Цены", href: "#work" },
+    { name: "О компании", href: "#about" },
     { name: "Контакты", href: "#contact" },
   ]
 
@@ -35,8 +35,13 @@ export function Navbar() {
           "glass bg-black/40"
         )}
       >
-        <a href="/" className="text-2xl font-bold tracking-tighter relative z-50">
-          Призма<span className="text-blue-400">.</span>
+        {/* Logo */}
+        <a href="/" className="flex items-center gap-2 relative z-50">
+          <img
+            src="https://cdn.poehali.dev/files/a82cb591-0a60-4878-ad66-37bf785b89e7.png"
+            alt="ЭкоКомфорт"
+            className="h-10 w-auto object-contain"
+          />
         </a>
 
         {/* Desktop Menu */}
@@ -50,8 +55,8 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
-          <button className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/90 transition-colors">
-            Обсудить проект
+          <button className="bg-green-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-green-500 transition-colors">
+            Получить консультацию
           </button>
         </div>
 
@@ -77,13 +82,13 @@ export function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-3xl font-light text-white hover:text-blue-400 transition-colors"
+                  className="text-3xl font-light text-white hover:text-green-400 transition-colors"
                 >
                   {link.name}
                 </a>
               ))}
-              <button className="mt-4 bg-white text-black px-8 py-3 rounded-full text-lg font-semibold">
-                Обсудить проект
+              <button className="mt-4 bg-green-600 text-white px-8 py-3 rounded-full text-lg font-semibold">
+                Получить консультацию
               </button>
             </div>
           </motion.div>
