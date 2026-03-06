@@ -178,7 +178,11 @@ export function Services() {
                 </div>
                 <div className="mt-6 flex items-center justify-between">
                   <span className={`text-lg font-bold ${service.color}`}>{service.price}</span>
-                  <span className="text-xs text-white/30 group-hover:text-green-400 transition-colors">нажмите для заказа →</span>
+                  <a
+                    href="#order-form"
+                    onClick={(e) => e.stopPropagation()}
+                    className="text-xs text-white/30 group-hover:text-green-400 transition-colors"
+                  >нажмите для заказа →</a>
                 </div>
               </GlassCard>
             </motion.div>
