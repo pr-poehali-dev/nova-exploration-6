@@ -52,9 +52,9 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
-          <button className="bg-green-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-green-500 transition-colors">
+          <a href="#order-form" className="bg-green-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-green-500 transition-colors">
             Получить консультацию
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -84,9 +84,9 @@ export function Navbar() {
                   {link.name}
                 </a>
               ))}
-              <button className="mt-4 bg-green-600 text-white px-8 py-3 rounded-full text-lg font-semibold">
+              <a href="#order-form" onClick={() => setIsMobileMenuOpen(false)} className="mt-4 bg-green-600 text-white px-8 py-3 rounded-full text-lg font-semibold">
                 Получить консультацию
-              </button>
+              </a>
             </div>
           </motion.div>
         )}
