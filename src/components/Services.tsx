@@ -163,10 +163,11 @@ export function Services() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              transition={{ delay: index * 0.05 }}
+              className="flex"
             >
               <GlassCard
-                className="h-full flex flex-col justify-between group cursor-pointer hover:border-green-500/30 transition-all"
+                className="flex flex-col justify-between w-full cursor-pointer hover:border-green-500/30 transition-all"
                 onClick={() => setSelected(service)}
               >
                 <div>

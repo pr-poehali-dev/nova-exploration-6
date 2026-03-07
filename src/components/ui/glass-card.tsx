@@ -12,7 +12,7 @@ export function GlassCard({ children, className, hoverEffect = true }: GlassCard
     <div
       className={cn(
         "glass rounded-3xl p-8 relative overflow-hidden group",
-        hoverEffect && "glass-hover hover:-translate-y-1",
+        hoverEffect && "glass-hover md:hover:-translate-y-1",
         className
       )}
     >

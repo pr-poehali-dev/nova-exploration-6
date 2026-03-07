@@ -45,7 +45,7 @@ const Index = () => {
       <section id="about" className="py-16 sm:py-32 relative">
         <div className="absolute top-0 right-0 w-[60vw] h-[60vw] bg-blue-900/10 rounded-full blur-[150px] pointer-events-none" />
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <div>
               <motion.p
                 initial={{ opacity: 0, y: 10 }}

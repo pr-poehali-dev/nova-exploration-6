@@ -82,12 +82,12 @@ export function Work() {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6 }}
             >
-              <GlassCard className="p-0 overflow-hidden group">
+              <GlassCard className="p-0 overflow-hidden group" hoverEffect={false}>
                 <div className={`grid md:grid-cols-2 gap-0 ${index % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""}`}>
                   <div className="p-6 sm:p-12 flex flex-col justify-center relative overflow-hidden">
                     <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
@@ -95,7 +95,7 @@ export function Work() {
                       <span className="text-sm font-medium text-white/50 mb-4 block uppercase tracking-wider">
                         {service.category}
                       </span>
-                      <h3 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-3 group-hover:translate-x-2 transition-transform duration-500">
+                      <h3 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-3 md:group-hover:translate-x-2 transition-transform duration-500">
                         {service.title}
                       </h3>
                       <p className="text-3xl font-bold text-green-400 mb-6">{service.price}</p>
