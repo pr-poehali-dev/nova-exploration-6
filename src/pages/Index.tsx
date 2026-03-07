@@ -191,7 +191,10 @@ const Index = () => {
             transition={{ delay: 0.2 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full"
           >
-            <button className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 bg-green-600 text-white rounded-full font-bold text-lg sm:text-xl hover:scale-105 hover:bg-green-500 transition-all shadow-[0_0_40px_-10px_rgba(34,197,94,0.5)]">
+            <button
+              onClick={() => document.getElementById("order-form")?.scrollIntoView({ behavior: "smooth" })}
+              className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 bg-green-600 text-white rounded-full font-bold text-lg sm:text-xl hover:scale-105 hover:bg-green-500 transition-all shadow-[0_0_40px_-10px_rgba(34,197,94,0.5)]"
+            >
               Заказать обработку
             </button>
             <a

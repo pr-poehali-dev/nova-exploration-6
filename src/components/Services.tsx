@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { GlassCard } from "@/components/ui/glass-card"
 import { motion, AnimatePresence } from "framer-motion"
 import Icon from "@/components/ui/icon"
@@ -48,11 +48,38 @@ const services = [
     details: ["Склады и производства", "Рестораны и кафе", "Торговые точки", "Полный пакет документов"],
     serviceKey: "Обработка предприятия",
   },
+  {
+    icon: "Leaf",
+    color: "text-lime-400",
+    bg: "bg-lime-500/10",
+    title: "Акарицидная обработка",
+    description: "Уничтожение клещей на приусадебных участках, в парках и зонах отдыха. Защитит вас и детей от укусов и переносимых болезней.",
+    price: "от 2 000 ₽",
+    priceNote: "Цена зависит от площади участка",
+    details: ["Клещи и паразиты", "Участки и газоны", "Безопасно для детей и животных", "Защита на весь сезон"],
+    serviceKey: "Акарицидная обработка",
+  },
+  {
+    icon: "Wind",
+    color: "text-sky-400",
+    bg: "bg-sky-500/10",
+    title: "Дезодорация",
+    description: "Устранение стойких неприятных запахов в помещениях: после пожара, затопления, животных или длительного простоя. Результат — свежий воздух без маскировки.",
+    price: "от 1 500 ₽",
+    priceNote: "Стоимость зависит от площади и источника запаха",
+    details: ["После пожара и залива", "Запахи животных", "Жилые и офисные помещения", "Сертифицированные препараты"],
+    serviceKey: "Дезодорация",
+  },
 ]
 
 type Service = typeof services[number]
 
 function ServiceModal({ service, onClose }: { service: Service; onClose: () => void }) {
+  useEffect(() => {
+    document.body.style.overflow = "hidden"
+    return () => { document.body.style.overflow = "" }
+  }, [])
+
   const handleOrder = () => {
     onClose()
     setTimeout(() => {
@@ -74,17 +101,21 @@ function ServiceModal({ service, onClose }: { service: Service; onClose: () => v
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm"
+      className="fixed inset-0 z-[200] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/80 backdrop-blur-md"
       onClick={onClose}
     >
       <motion.div
-        initial={{ opacity: 0, scale: 0.92, y: 20 }}
-        animate={{ opacity: 1, scale: 1, y: 0 }}
-        exit={{ opacity: 0, scale: 0.92, y: 20 }}
-        transition={{ duration: 0.25 }}
-        className="w-full max-w-md bg-[#111] border border-white/10 rounded-3xl p-8 relative"
+        initial={{ opacity: 0, y: 60 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 60 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
+        className="w-full sm:max-w-md bg-[#111] border border-white/10 rounded-t-3xl sm:rounded-3xl p-6 sm:p-8 relative max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
+        <div className="flex justify-center mb-4 sm:hidden">
+          <div className="w-10 h-1 rounded-full bg-white/20" />
+        </div>
+
         <button
           onClick={onClose}
           className="absolute top-5 right-5 text-white/40 hover:text-white transition-colors"
@@ -128,7 +159,7 @@ export function Services() {
   const [selected, setSelected] = useState<Service | null>(null)
 
   return (
-    <section id="services" className="py-16 sm:py-32 relative">
+    <section id="services" className="py-16 sm:py-32 relative z-10">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="mb-10 sm:mb-20">
           <motion.p

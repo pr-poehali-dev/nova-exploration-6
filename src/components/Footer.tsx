@@ -57,7 +57,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between pt-8 border-t border-white/5 text-sm text-white/40 text-center md:text-left">
-          <p>&copy; 2025 ЭкоКомфорт. Все права защищены.</p>
+          <p>&copy; 2026 ЭкоКомфорт. Все права защищены.</p>
           <div className="flex items-center gap-4 flex-wrap justify-center">
             <a href="#" className="hover:text-white transition-colors">Политика конфиденциальности</a>
             <a href="#" className="hover:text-white transition-colors">Условия использования</a>

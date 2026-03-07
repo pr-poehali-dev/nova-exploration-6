@@ -59,16 +59,22 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full"
         >
-          <button className="group relative w-full sm:w-auto px-8 py-4 bg-green-600 text-white rounded-full font-semibold text-base sm:text-lg overflow-hidden transition-all hover:scale-105 hover:bg-green-500">
+          <button
+            onClick={() => document.getElementById("order-form")?.scrollIntoView({ behavior: "smooth" })}
+            className="group relative w-full sm:w-auto px-8 py-4 bg-green-600 text-white rounded-full font-semibold text-base sm:text-lg overflow-hidden transition-all hover:scale-105 hover:bg-green-500"
+          >
             <span className="relative z-10 flex items-center justify-center gap-2">
               <Icon name="Shield" size={20} />
               Заказать обработку
             </span>
           </button>
-          <button className="w-full sm:w-auto px-8 py-4 glass rounded-full font-semibold text-base sm:text-lg text-white hover:bg-white/10 transition-all hover:scale-105 flex items-center justify-center gap-2">
+          <a
+            href="tel:+79233150897"
+            className="w-full sm:w-auto px-8 py-4 glass rounded-full font-semibold text-base sm:text-lg text-white hover:bg-white/10 transition-all hover:scale-105 flex items-center justify-center gap-2"
+          >
             <Phone className="w-5 h-5" />
             Проконсультироваться
-          </button>
+          </a>
         </motion.div>
 
         {/* Trust badges */}
