@@ -32,7 +32,7 @@ const services = [
   {
     title: "Акарицидная обработка",
     category: "Участки и парки",
-    image: "https://cdn.poehali.dev/projects/c12c0a38-283d-456a-8c8b-a20ed4ebcc9f/files/4726a504-8a6b-4340-9cf6-c1dc269c1090.jpg",
+    image: "https://cdn.poehali.dev/projects/c12c0a38-283d-456a-8c8b-a20ed4ebcc9f/files/e20f9de8-fdfd-46b6-9001-742714b9d072.jpg",
     color: "from-lime-500/20 to-green-500/20",
     description: "Уничтожение клещей на приусадебных участках и зонах отдыха. Защита на весь сезон, безопасно для детей и животных.",
     tags: ["Клещи", "Участки", "Газоны", "Сезонная защита"],
@@ -41,7 +41,7 @@ const services = [
   {
     title: "Дезодорация",
     category: "Жилые и офисные помещения",
-    image: "https://cdn.poehali.dev/projects/c12c0a38-283d-456a-8c8b-a20ed4ebcc9f/files/500ed5bc-8278-49ef-bd64-88e6346ce8cf.jpg",
+    image: "https://cdn.poehali.dev/projects/c12c0a38-283d-456a-8c8b-a20ed4ebcc9f/files/602d774e-73d6-46f9-acf0-0c69a6189f0b.jpg",
     color: "from-sky-500/20 to-blue-500/20",
     description: "Устранение стойких запахов после пожара, залива или животных. Свежий воздух без маскировки — результат с первого визита.",
     tags: ["После пожара", "Запахи животных", "Залив", "Плесень"],
