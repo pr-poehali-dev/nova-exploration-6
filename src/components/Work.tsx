@@ -33,12 +33,12 @@ const services = [
 
 export function Work() {
   return (
-    <section id="work" className="py-32 relative overflow-hidden">
+    <section id="work" className="py-16 sm:py-32 relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] bg-green-900/10 rounded-full blur-[150px] pointer-events-none" />
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-20 gap-6 sm:gap-8">
           <div>
             <motion.p
               initial={{ opacity: 0, y: 10 }}
@@ -52,7 +52,7 @@ export function Work() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-4xl md:text-6xl font-bold mb-6"
+              className="text-2xl sm:text-4xl md:text-6xl font-bold mb-6"
             >
               Прозрачные цены <br />
               <span className="text-gradient">без скрытых платежей</span>
@@ -78,7 +78,7 @@ export function Work() {
           </motion.a>
         </div>
 
-        <div className="space-y-20">
+        <div className="space-y-10 sm:space-y-20">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -89,13 +89,13 @@ export function Work() {
             >
               <GlassCard className="p-0 overflow-hidden group">
                 <div className={`grid md:grid-cols-2 gap-0 ${index % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""}`}>
-                  <div className="p-12 flex flex-col justify-center relative overflow-hidden">
+                  <div className="p-6 sm:p-12 flex flex-col justify-center relative overflow-hidden">
                     <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
                     <div className="relative z-10">
                       <span className="text-sm font-medium text-white/50 mb-4 block uppercase tracking-wider">
                         {service.category}
                       </span>
-                      <h3 className="text-4xl md:text-5xl font-bold mb-3 group-hover:translate-x-2 transition-transform duration-500">
+                      <h3 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-3 group-hover:translate-x-2 transition-transform duration-500">
                         {service.title}
                       </h3>
                       <p className="text-3xl font-bold text-green-400 mb-6">{service.price}</p>
@@ -111,7 +111,7 @@ export function Work() {
                       </div>
                     </div>
                   </div>
-                  <div className="relative h-[400px] md:h-auto overflow-hidden">
+                  <div className="relative h-[220px] sm:h-[320px] md:h-auto overflow-hidden">
                     <img
                       src={service.image}
                       alt={service.title}

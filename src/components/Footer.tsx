@@ -1,11 +1,11 @@
 export function Footer() {
   return (
-    <footer className="relative pt-32 pb-12 overflow-hidden">
+    <footer className="relative pt-16 sm:pt-32 pb-12 overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-          <div>
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-12 sm:mb-20">
+          <div className="col-span-2 md:col-span-1">
             <a href="/" className="flex items-center gap-2 mb-6">
               <img
                 src="https://cdn.poehali.dev/projects/c12c0a38-283d-456a-8c8b-a20ed4ebcc9f/bucket/06a7f2de-fa3f-427a-9ac0-03898357dbcf.png"
@@ -13,7 +13,7 @@ export function Footer() {
                 className="h-12 w-auto object-contain"
               />
             </a>
-            <p className="text-white/50 leading-relaxed">
+            <p className="text-white/50 leading-relaxed text-sm">
               Профессиональная дезинфекция, дезинсекция и дератизация в Красноярске и области. Работаем с 2015 года.
             </p>
           </div>
@@ -56,9 +56,9 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/5 text-sm text-white/40">
+        <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between pt-8 border-t border-white/5 text-sm text-white/40 text-center md:text-left">
           <p>&copy; 2025 ЭкоКомфорт. Все права защищены.</p>
-          <div className="flex items-center gap-6 mt-4 md:mt-0">
+          <div className="flex items-center gap-4 flex-wrap justify-center">
             <a href="#" className="hover:text-white transition-colors">Политика конфиденциальности</a>
             <a href="#" className="hover:text-white transition-colors">Условия использования</a>
           </div>

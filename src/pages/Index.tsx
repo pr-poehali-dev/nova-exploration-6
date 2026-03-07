@@ -42,9 +42,9 @@ const Index = () => {
       <Work />
 
       {/* About Section */}
-      <section id="about" className="py-32 relative">
+      <section id="about" className="py-16 sm:py-32 relative">
         <div className="absolute top-0 right-0 w-[60vw] h-[60vw] bg-blue-900/10 rounded-full blur-[150px] pointer-events-none" />
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <motion.p
@@ -59,7 +59,7 @@ const Index = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="text-4xl md:text-5xl font-bold mb-8"
+                className="text-2xl sm:text-4xl md:text-5xl font-bold mb-8"
               >
                 ЭкоКомфорт —<br />
                 <span className="text-gradient">ваша защита</span> в Красноярске
@@ -98,7 +98,7 @@ const Index = () => {
               </motion.div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 mt-8 lg:mt-0">
               {stats.map((stat, index) => (
                 <motion.div
                   key={index}
@@ -107,8 +107,8 @@ const Index = () => {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
                 >
-                  <GlassCard className="text-center p-8">
-                    <p className="text-4xl font-bold text-green-400 mb-2">{stat.value}</p>
+                  <GlassCard className="text-center p-4 sm:p-8">
+                    <p className="text-2xl sm:text-4xl font-bold text-green-400 mb-2">{stat.value}</p>
                     <p className="text-white/60 text-sm">{stat.label}</p>
                   </GlassCard>
                 </motion.div>
@@ -119,8 +119,8 @@ const Index = () => {
       </section>
 
       {/* Reviews Section */}
-      <section className="py-20 relative">
-        <div className="container mx-auto px-6 relative z-10">
+      <section className="py-16 sm:py-20 relative">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -133,7 +133,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold mb-16 text-center"
+            className="text-2xl sm:text-4xl md:text-5xl font-bold mb-10 sm:mb-16 text-center"
           >
             Нам доверяют клиенты
           </motion.h2>
@@ -164,13 +164,13 @@ const Index = () => {
       <OrderForm />
 
       {/* Call to Action Section */}
-      <section id="contact" className="py-32 relative">
-        <div className="container mx-auto px-6 text-center relative z-10">
+      <section id="contact" className="py-16 sm:py-32 relative">
+        <div className="container mx-auto px-4 sm:px-6 text-center relative z-10">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-7xl font-bold mb-8 tracking-tight"
+            className="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 sm:mb-8 tracking-tight"
           >
             Готовы избавиться <br />
             <span className="text-gradient">от вредителей?</span>
@@ -180,7 +180,7 @@ const Index = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-xl text-white/60 mb-12 max-w-2xl mx-auto"
+            className="text-base sm:text-xl text-white/60 mb-8 sm:mb-12 max-w-2xl mx-auto px-2"
           >
             Оставьте заявку — наш специалист свяжется с вами в течение 15 минут и бесплатно проконсультирует.
           </motion.p>
@@ -189,14 +189,14 @@ const Index = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full"
           >
-            <button className="px-10 py-5 bg-green-600 text-white rounded-full font-bold text-xl hover:scale-105 hover:bg-green-500 transition-all shadow-[0_0_40px_-10px_rgba(34,197,94,0.5)]">
+            <button className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 bg-green-600 text-white rounded-full font-bold text-lg sm:text-xl hover:scale-105 hover:bg-green-500 transition-all shadow-[0_0_40px_-10px_rgba(34,197,94,0.5)]">
               Заказать обработку
             </button>
             <a
               href="tel:+79233150897"
-              className="px-10 py-5 glass rounded-full font-bold text-xl text-white hover:bg-white/10 transition-all hover:scale-105"
+              className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 glass rounded-full font-bold text-lg sm:text-xl text-white hover:bg-white/10 transition-all hover:scale-105 text-center"
             >
               +7 923 315 08-97
             </a>

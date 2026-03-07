@@ -12,7 +12,7 @@ export function Hero() {
         <div className="absolute bottom-[-10%] left-[20%] w-[45vw] h-[45vw] bg-green-800/15 rounded-full blur-[120px] animate-blob animation-delay-4000 mix-blend-screen" />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 text-center">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -33,21 +33,21 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-8"
+          className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-8"
         >
           Избавим от{" "}
           <span className="text-gradient">насекомых</span>
           <br />
           и вредителей
           <br />
-          <span className="text-4xl md:text-5xl lg:text-6xl text-white/90">за один визит</span>
+          <span className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-white/90">за один визит</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-12 leading-relaxed"
+          className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-12 leading-relaxed px-2"
         >
           Профессиональная дезинфекция, дезинсекция и дератизация помещений
           в Красноярске и области. Безопасные препараты, гарантия результата.
@@ -57,15 +57,15 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full"
         >
-          <button className="group relative px-8 py-4 bg-green-600 text-white rounded-full font-semibold text-lg overflow-hidden transition-all hover:scale-105 hover:bg-green-500">
-            <span className="relative z-10 flex items-center gap-2">
+          <button className="group relative w-full sm:w-auto px-8 py-4 bg-green-600 text-white rounded-full font-semibold text-base sm:text-lg overflow-hidden transition-all hover:scale-105 hover:bg-green-500">
+            <span className="relative z-10 flex items-center justify-center gap-2">
               <Icon name="Shield" size={20} />
               Заказать обработку
             </span>
           </button>
-          <button className="px-8 py-4 glass rounded-full font-semibold text-lg text-white hover:bg-white/10 transition-all hover:scale-105 flex items-center gap-2">
+          <button className="w-full sm:w-auto px-8 py-4 glass rounded-full font-semibold text-base sm:text-lg text-white hover:bg-white/10 transition-all hover:scale-105 flex items-center justify-center gap-2">
             <Phone className="w-5 h-5" />
             Проконсультироваться
           </button>

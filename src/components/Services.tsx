@@ -128,9 +128,9 @@ export function Services() {
   const [selected, setSelected] = useState<Service | null>(null)
 
   return (
-    <section id="services" className="py-32 relative">
-      <div className="container mx-auto px-6">
-        <div className="mb-20">
+    <section id="services" className="py-16 sm:py-32 relative">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="mb-10 sm:mb-20">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -143,7 +143,7 @@ export function Services() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-bold mb-6"
+            className="text-2xl sm:text-4xl md:text-6xl font-bold mb-6"
           >
             Комплексная защита <br />
             <span className="text-gradient">вашего пространства</span>
