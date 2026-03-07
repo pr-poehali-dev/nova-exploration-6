@@ -16,7 +16,7 @@ const serviceOptions = [
 ]
 
 export function OrderForm() {
-  const [form, setForm] = useState({ name: "", phone: "", service: "", message: "" })
+  const [form, setForm] = useState({ name: "", phone: "", service: "", address: "", area: "", message: "" })
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
   const [error, setError] = useState("")
 
@@ -38,7 +38,7 @@ export function OrderForm() {
       const data = await res.json()
       if (res.ok && data.success) {
         setStatus("success")
-        setForm({ name: "", phone: "", service: "", message: "" })
+        setForm({ name: "", phone: "", service: "", address: "", area: "", message: "" })
       } else {
         throw new Error(data.error || "Ошибка отправки")
       }
@@ -143,6 +143,31 @@ export function OrderForm() {
                           <option key={s} value={s} className="bg-gray-900">{s}</option>
                         ))}
                       </select>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                      <div>
+                        <label className="block text-sm text-white/60 mb-2">Адрес объекта</label>
+                        <input
+                          type="text"
+                          name="address"
+                          value={form.address}
+                          onChange={handleChange}
+                          placeholder="ул. Ленина, 10"
+                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-green-500/50 focus:bg-white/10 transition-all"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm text-white/60 mb-2">Площадь, м²</label>
+                        <input
+                          type="text"
+                          name="area"
+                          value={form.area}
+                          onChange={handleChange}
+                          placeholder="например, 60"
+                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-green-500/50 focus:bg-white/10 transition-all"
+                        />
+                      </div>
                     </div>
 
                     <div>
